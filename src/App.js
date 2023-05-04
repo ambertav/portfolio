@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router';
 
 import Navigation from './components/Navigation';
 import Projects from './pages/Projects';
+import Resume from './pages/Resume';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navigation />
       <Routes>
           <Route path='/projects' element={<Projects />} />
+          <Route path='/resume' element={<Resume />} />
       </Routes>
     </div>
   );
