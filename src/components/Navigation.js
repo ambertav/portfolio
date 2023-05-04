@@ -4,13 +4,15 @@ function Navigation () {
     return (
         <nav>
             <ul>
+                <Link to='/'>
+                    <li>About</li>
+                </Link>
                 <Link to='/projects'>
                     <li>Projects</li>
                 </Link>
                 <Link to='/resume'>
                     <li>Resume</li>
                 </Link>
-                <li>About</li>
             </ul>
         </nav>
     );
