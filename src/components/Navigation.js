@@ -7,7 +7,9 @@ function Navigation () {
                 <Link to='/projects'>
                     <li>Projects</li>
                 </Link>
-                <li>Resume</li>
+                <Link to='/resume'>
+                    <li>Resume</li>
+                </Link>
                 <li>About</li>
             </ul>
         </nav>
