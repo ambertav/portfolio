@@ -6,7 +6,8 @@ function About () {
     const [ bioLength, setBioLength ] = useState('long');
 
     function handleClick (evt) {
-        console.log('clicked');
+        evt.preventDefault();
+        setBioLength(evt.target.textContent.toLowerCase());
     }
 
     return (
