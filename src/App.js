@@ -6,13 +6,15 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import About from './pages/About';
 
+import data from './data';
+
 
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Routes>
-          <Route path='/' element={<About />} />
+          <Route path='/' element={<About data={data} />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/resume' element={<Resume />} />
       </Routes>

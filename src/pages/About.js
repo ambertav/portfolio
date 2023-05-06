@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Bio from '../components/Bio';
 
-function About () {
+function About (props) {
     const [ bioLength, setBioLength ] = useState('long');
 
     function handleClick (evt) {
@@ -20,8 +20,7 @@ function About () {
                         <button onClick={handleClick}>Long</button>
                     </ul>
             </div>
-            <Bio bioLength={bioLength} />
-            <h1>Here are my tech skills</h1>
+            <Bio bioLength={bioLength} skills={props.data.skills} />
             <h1>Here are the links to my github and linkedin</h1>
             <h1>Here are my featured projects</h1>
         </div>
