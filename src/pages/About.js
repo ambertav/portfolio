@@ -3,16 +3,20 @@ import { useState } from 'react';
 import Bio from '../components/Bio';
 
 function About () {
-    const [ bioLength, setBioLength ] = useState('short');
+    const [ bioLength, setBioLength ] = useState('long');
+
+    function handleClick (evt) {
+        console.log('clicked');
+    }
 
     return (
         <div>
             <div>
                 Set Bio Length
                     <ul>
-                        <li>Short</li>
-                        <li>Medium</li>
-                        <li>Long</li>
+                        <button onClick={handleClick}>Short</button>
+                        <button onClick={handleClick}>Medium</button>
+                        <button onClick={handleClick}>Long</button>
                     </ul>
             </div>
             <Bio bioLength={bioLength} />
