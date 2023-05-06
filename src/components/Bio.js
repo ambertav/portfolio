@@ -13,6 +13,21 @@ function Bio (props) {
     return (
         <div>
             <h1>{ bio }</h1>
+            <div>
+                <h2>Featured Technical Skills</h2>
+                {Object.entries(props.skills).map((set) => {
+                    return (
+                        <ul>
+                            <h4>{set[0]}</h4>
+                            {set[1].map((skill) => {
+                                return (
+                                    <li>{skill}</li>
+                                )
+                            })}
+                        </ul>
+                    )
+                })}
+            </div>
         </div>
     )
 }
