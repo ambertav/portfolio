@@ -1,14 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Bio from '../components/Bio';
+import Project from '../components/Project';
 
 function About (props) {
     const [ bioLength, setBioLength ] = useState('long');
+    const [ featuredProjects, setFeaturedProjects ] = useState(
+        props.data.projects.filter((p) => {
+            if (p.featured === true) {
+                return p;
+            }}
+        )
+    );
 
     function handleClick (evt) {
         evt.preventDefault();
         setBioLength(evt.target.textContent.toLowerCase());
     }
+
 
     return (
         <div>
@@ -21,7 +30,8 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
-            <h1>Here are my featured projects</h1>
+            <h3>Featured Projects</h3>
+            <Project projects={featuredProjects} />
         </div>
     );
 }
