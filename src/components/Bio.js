@@ -1,3 +1,5 @@
+import Connect from './Connect';
+
 function Bio (props) {
 
     return (
@@ -22,8 +24,9 @@ function Bio (props) {
                     )
                 })}
             </div>
+            <Connect />
         </div>
-    )
+    );
 }
 
 

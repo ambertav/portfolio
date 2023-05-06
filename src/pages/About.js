@@ -21,7 +21,6 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
-            <h1>Here are the links to my github and linkedin</h1>
             <h1>Here are my featured projects</h1>
         </div>
     );
