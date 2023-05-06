@@ -1,28 +1,22 @@
 function Bio (props) {
 
-    let bio = '';
-
-    if (props.bioLength === 'long') {
-        bio = 'this is the long bio';
-    } else if (props.bioLength === 'medium') {
-        bio = 'this is the medium bio';
-    } else {
-        bio = 'this is the short bio';
-    }
-
     return (
         <div>
-            <h1>{ bio }</h1>
+            {Object.keys(props.bio).map((b) => {
+                if (b === props.bioLength) {
+                    return <h2>{props.bio[b]}</h2>
+                }
+            })}
             <div>
-                <h2>Featured Technical Skills</h2>
-                {Object.entries(props.skills).map((set) => {
+                <h3>Featured Technical Skills</h3>
+                {Object.entries(props.skills).map((set, index) => {
                     return (
-                        <ul>
+                        <ul key={index}>
                             <h4>{set[0]}</h4>
-                            {set[1].map((skill) => {
+                            {set[1].map((skill, index) => {
                                 return (
-                                    <li>{skill}</li>
-                                )
+                                    <li key={index}>{skill}</li>
+                                );
                             })}
                         </ul>
                     )
