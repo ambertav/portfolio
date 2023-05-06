@@ -16,7 +16,7 @@ function App() {
       <Navigation />
       <Routes>
           <Route path='/' element={<About data={data} />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/projects' element={<Projects projects={data.projects} />} />
           <Route path='/resume' element={<Resume />} />
       </Routes>
       <Footer />
