@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router';
 
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import About from './pages/About';
@@ -18,6 +19,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/resume' element={<Resume />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
