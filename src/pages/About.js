@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 import Bio from '../components/Bio';
+import Skills from '../components/Skills';
+import Connect from '../components/Connect';
 import Project from '../components/Project';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,6 +35,9 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
+            <h3 class='font-semibold text-lg'>Top Technical Skills</h3>
+            <Skills skills={props.data.skills} />
+            <Connect />
             <h3 class='font-semibold text-lg'>Featured Projects</h3>
             <div class='flex justify-evenly items-center flex-wrap'>
                 <Project projects={featuredProjects} />

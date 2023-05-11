@@ -55,6 +55,12 @@ main {
   }
 }
 
+@layer components {
+  .icons {
+    @apply w-8 h-8 md:w-12 md:h-12
+  }
+}
+
 .hamburger {
   display: none;
 }
