@@ -4,11 +4,7 @@ export default {
         medium: 'this is the medium bio',
         long: 'this is the long bio'
     },
-    skills: {
-        languages: ['JavaScript', 'HTML5', 'CSS3', 'Python'],
-        'frameworks / libraries': ['Express', 'React', 'Next.js', 'Django', 'Tailwind'],
-        'databases / backend': ['MongoDB', 'PostgreSQL', 'Firebase', 'AWS'],
-    },
+    skills: ['html5', 'css3', 'javascript', 'jquery', 'node-js', 'react', 'next-js', 'mongodb', 'postgresql', 'python', 'firebase', 'aws', 'tailwind'],
     projects: [
         {
             name: 'Astronomy Memory Game',
@@ -23,16 +19,24 @@ export default {
             deployLink: 'https://weightlifting-log.herokuapp.com/',
             repoLink: 'https://github.com/ambertav/weightlifting-training-log',
             description: 'A full CRUD web application built via a MEN stack, that allows users to plan and track olympic weightlifting workouts for the week.',
-            stack: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'jQuery', 'Bootstrap', 'Embedded JavaScript'],
+            stack: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'jQuery', 'bcrypt', 'Bootstrap', 'Embedded JavaScript'],
             featured: true
         },
         {
-            name: 'What`s For Dinner',
+            name: 'What\'s For Dinner',
             deployLink: 'https://whatsfordinnerteam.netlify.app/',
             repoLink: 'https://github.com/ambertav/whatsfordinner',
             backendRepoLink: 'https://github.com/ambertav/whatsfordinner-backend',
             description: 'A full stack MERN application that allows users to search for recipes based on ingredients available within their pantry.',
             stack: ['React', 'Node.js', 'Express,js', 'MongoDB', 'Firebase', 'JavaScript'],
+            featured: false
+        },
+        {
+            name: 'FlowerCollector',
+            deployLink: 'http://flowercollector.herokuapp.com/',
+            repoLink: 'https://github.com/ambertav/flower_collector',
+            description: 'A web application that allows the user to collect flowers, maintain a watering log for each flower, and add various types pollinators that can pollinate each flower.',
+            stack: ['Django', 'Python', 'PostgreSQL', 'AWS', 'Bulma'],
             featured: false
         },
         {
