@@ -2,8 +2,11 @@ import { useState } from 'react';
 
 import Bio from '../components/Bio';
 import Project from '../components/Project';
+import { useNavigate } from 'react-router-dom';
 
 function About (props) {
+
+    const navigate = useNavigate();
 
     const [ bioLength, setBioLength ] = useState('long');
     const [ featuredProjects, setFeaturedProjects ] = useState(
@@ -30,8 +33,11 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
-            <h3>Featured Projects</h3>
-            <Project projects={featuredProjects} />
+            <h3 class='font-semibold text-lg'>Featured Projects</h3>
+            <div class='flex justify-evenly items-center flex-wrap'>
+                <Project projects={featuredProjects} />
+            </div>
+            <button class='btn-primary justify-center items-center mb-4' onClick={() => navigate('/projects')}>View More Projects</button>
         </div>
     );
 }
