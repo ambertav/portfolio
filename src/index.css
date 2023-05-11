@@ -11,10 +11,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body, .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+
+main {
+  flex-grow: 1;
+}
+
 
 @layer components {
   .btn-primary {
