@@ -4,8 +4,6 @@ import Header from '../components/Header';
 import Bio from '../components/Bio';
 import Skills from '../components/Skills';
 import Connect from '../components/Connect';
-import Skills from '../components/Skills';
-import Connect from '../components/Connect';
 import Project from '../components/Project';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,9 +31,9 @@ function About (props) {
             <div class='flex flex-col items-center mx-auto p-6'>
                 <h2>Set Bio Length</h2>
                     <ul class='flex flex-row mx-4 space-x-2.5'>
-                        <button class='btn-primary' onClick={handleClick}>Short</button>
-                        <button class='btn-primary' onClick={handleClick}>Medium</button>
-                        <button class='btn-primary' onClick={handleClick}>Long</button>
+                        <button class={bioLength === 'short' ? 'btn-primary ring-2 ring-black ring-opacity-75' : 'btn-primary'} onClick={handleClick}>Short</button>
+                        <button class={bioLength === 'medium' ? 'btn-primary ring-2 ring-black ring-opacity-75' : 'btn-primary'} onClick={handleClick}>Medium</button>
+                        <button class={bioLength === 'long' ? 'btn-primary ring-2 ring-black ring-opacity-75' : 'btn-primary'} onClick={handleClick}>Long</button>
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
