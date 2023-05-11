@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Header from '../components/Header';
 import Bio from '../components/Bio';
 import Skills from '../components/Skills';
 import Connect from '../components/Connect';
@@ -26,6 +27,7 @@ function About (props) {
 
     return (
         <div class='max-w-screen-xl'>
+            <Header />
             <div class='flex flex-col items-center mx-auto p-6'>
                 <h2>Set Bio Length</h2>
                     <ul class='flex flex-row mx-4 space-x-2.5'>
@@ -35,7 +37,7 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
-            <h3 class='font-semibold text-lg'>Top Technical Skills</h3>
+            <h3 class='font-semibold text-lg pt-1'>Top Technical Skills</h3>
             <Skills skills={props.data.skills} />
             <Connect />
             <h3 class='font-semibold text-lg'>Featured Projects</h3>

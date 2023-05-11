@@ -23,9 +23,6 @@ function Navigation () {
                 </button>
                 <div class={navOpen ? 'w-full mr-10 md:hidden overflow-hidden' : 'hidden w-full md:block md:w-auto'}>
                     <ul class= {navOpen ? 'flex flex-col p-2 w-2/5 ml-auto shadow-2xl bg-white text-center rounded-lg' : 'flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent'} >
-                        <Link to='/about' onClick={() => setNavOpen(false)}>
-                            <li class='hover:font-semibold'>About</li>
-                        </Link>
                         <Link to='/projects' onClick={() => setNavOpen(false)}>
                             <li class='hover:font-semibold'>Projects</li>
                         </Link>
