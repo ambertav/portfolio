@@ -37,10 +37,11 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
-            <h3 class='font-semibold text-lg pt-1'>Top Technical Skills</h3>
+            <h3 class='font-semibold text-lg mt-3'>Technical Skills</h3>
             <Skills skills={props.data.skills} />
+            <h3 class='font-semibold text-lg pt-6 my-3'>Connect with Amber</h3>
             <Connect />
-            <h3 class='font-semibold text-lg'>Featured Projects</h3>
+            <h3 class='font-semibold text-lg pt-6 mb-3 mt-6'>Featured Projects</h3>
             <div class='flex justify-evenly items-center flex-wrap'>
                 <Project projects={featuredProjects} />
             </div>

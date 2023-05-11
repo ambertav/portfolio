@@ -1,9 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-
-
-import { MdClose } from 'react-icons/md';
-import { FiMenu } from 'react-icons/fi';
+import { useState } from 'react';
 
 function Navigation () {
 
@@ -17,8 +13,8 @@ function Navigation () {
                 </Link>
                 <button class='hamburger' onClick={() => setNavOpen((prev) => !prev)}>
                 {
-                    navOpen ? (<MdClose style={{ width: '32px', height: '28px'}} />)
-                        : (<FiMenu style={{width: '32px', height: '28px'}} />)
+                    navOpen ? (<img src={require('../icons/close.png')}style={{ width: '32px', height: '28px'}} />)
+                        : (<img src={require('../icons/hamburger.png')} style={{width: '32px', height: '28px'}} />)
                 }
                 </button>
                 <div class={navOpen ? 'w-full mr-10 md:hidden overflow-hidden' : 'hidden w-full md:block md:w-auto'}>
