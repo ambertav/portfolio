@@ -4,13 +4,15 @@ function Bio (props) {
 
     return (
         <div>
-            {Object.keys(props.bio).map((b) => {
-                if (b === props.bioLength) {
-                    return <h2>{props.bio[b]}</h2>
-                }
-            })}
+            <div class='bio'>
+                {Object.keys(props.bio).map((b) => {
+                    if (b === props.bioLength) {
+                        return <h2>{props.bio[b]}</h2>
+                    }
+                })}
+            </div>
             <div>
-                <h3>Featured Technical Skills</h3>
+                <h3 class='font-semibold text-lg'>Top Technical Skills</h3>
                 {Object.entries(props.skills).map((set, index) => {
                     return (
                         <ul key={index}>
