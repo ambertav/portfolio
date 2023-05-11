@@ -4,6 +4,8 @@ import Header from '../components/Header';
 import Bio from '../components/Bio';
 import Skills from '../components/Skills';
 import Connect from '../components/Connect';
+import Skills from '../components/Skills';
+import Connect from '../components/Connect';
 import Project from '../components/Project';
 import { useNavigate } from 'react-router-dom';
 

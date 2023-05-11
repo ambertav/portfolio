@@ -2,8 +2,8 @@
 
 function Skills (props) {
     return (
-        <div class='flex justify-center items-center'>
-            <ul class='flex justify-center items-center flex-wrap w-4/5'>
+        <div class='flex justify-center items-center pt-3 mb-6'>
+            <ul class='flex justify-center items-center flex-wrap w-3/5'>
                 {props.skills.map((s) => {
                     return (
                         <li class='p-3'>
