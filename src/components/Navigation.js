@@ -6,7 +6,7 @@ function Navigation () {
     const [navOpen, setNavOpen] = useState(false);
 
     return (
-        <nav class='border-pink-400 shadow bg-pink-200 h-20'>
+        <nav class='border-pink-400 shadow bg-pink-200 h-20 shadow-xl'>
             <div class='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6'>
                 <Link to='/' onClick={() => setNavOpen(false)}>
                     <span class='text-2xl font-semibold hover:font-bold'>Amber Taveras</span>

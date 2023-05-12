@@ -60,6 +60,12 @@ main {
   }
 }
 
+@layer components {
+  .profile {
+    @apply w-48 h-48 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-pink-200 border-8 m-6 shadow-lg
+  }
+}
+
 .hamburger {
   display: none;
 }
