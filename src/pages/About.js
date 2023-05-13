@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Bio from '../components/Bio';
 import Skills from '../components/Skills';
 import Connect from '../components/Connect';
 import Project from '../components/Project';
-import { useNavigate } from 'react-router-dom';
+import Contact from '../components/Contact';
 
 function About (props) {
 
@@ -46,6 +47,9 @@ function About (props) {
                 <Project projects={featuredProjects} />
             </div>
             <button class='btn-primary justify-center items-center mb-4' onClick={() => navigate('/projects')}>View More Projects</button>
+            <div>
+                <Contact />
+            </div>
         </div>
     );
 }
