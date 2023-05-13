@@ -14,6 +14,10 @@ function Contact (props) {
 
     const { name, email, message } = formState;
 
+    function encode ({ name, email, message }) {
+        return `form-name=contact&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`
+    }
+
     function handleChange (evt) {
         setFormState({
             ...formState,
@@ -21,15 +25,22 @@ function Contact (props) {
         });
     }
 
-    function handleSubmit (evt) {
+    async function handleSubmit (evt) {
         evt.preventDefault();
+        await fetch ('/', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/x-www-form-urlencoded'
+            },
+            body: encode(formState)
+        })
         setFormState(getClearFormState());
     }
 
     return (
         <>
             <h3>Contact</h3>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} data-netlify="true" name="contact">
                 <input type="hidden" name="form-name" value="contact" />
                 <label htmlFor="name">Name:</label>
                     <input 
