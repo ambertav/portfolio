@@ -10,7 +10,7 @@ function Contact (props) {
         });
     }
 
-    const [formState, setFormState] = useState(getClearFormState());
+    const [ formState, setFormState ] = useState(getClearFormState());
 
     const { name, email, message } = formState;
 
@@ -30,33 +30,27 @@ function Contact (props) {
         <>
             <h3>Contact</h3>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
+                <input type="hidden" name="form-name" value="contact" />
+                <label htmlFor="name">Name:</label>
                     <input 
                         type="text"
                         name="name"
                         onChange={handleChange}
                         value={name}
                     />
-                </label>
-                <label>
-                    Email:
+                <label htmlFor="email">Email:</label>
                     <input
                         type="text"
                         name="email"
                         onChange={handleChange}
                         value={email}
                     />
-                </label>
-                <label>
-                    Message:
+                <label htmlFor="message">Message:</label>
                     <textarea
-                        type="text"
                         name="message"
                         onChange={handleChange}
                         value={message}
                     />
-                </label>
                 <input type="submit" value="Send Message" />
             </form>
         </>
