@@ -1,10 +1,13 @@
 function Resume () {
     return (
         <>
-            <header>Amber Taveras</header>
-            <div>
-                <h3>Summary</h3>
-                <p>
+        <section className='border-b-2 flex flex-start flex-col text-left'>
+            <h1 className='mt-10 ml-10 font-semibold text-2xl p-3'>Resume</h1>
+            <h5 className='ml-10 py-4 px-3'>Download a copy <a href="https://docs.google.com/document/d/1oGnuK0qlJaKSEy8ad6PwSijSmbz_-Y4PuhU6mxaBIyQ/edit?usp=sharing" target="_blank" className='text-red-900 font-bold'>here</a></h5>
+        </section>
+            <div className='flex flex-col items-center my-6'>
+                <h3 className='font-semibold text-xl mt-10'>Summary</h3>
+                <p className='p-4 w-4/5'>
                     Skilled full-stack software engineer with an extensive background in pharmaceutical compounding.
                     Methodical problem solver with expert judgment and insightful decision making.
                     Excels in rapidly analyzing and troubleshooting complex scenarios while adhering to rigorous
@@ -13,28 +16,18 @@ function Resume () {
                     for innovation and simplicity.
                 </p>
             </div>
-            <div>
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>Languages:
-                        <p>JavaScript, React, HTML5, CSS3</p>
-                    </li>
-                    <li>Frameworks / Libraries:
-                        <p>React, Express, Next.js</p>
-                    </li>
-                    <li>Databases / Backends:
-                        <p>MongoDB, PostgreSQL, Firebase, AWS</p>
-                    </li>
-                    <li>Methodologies:
-                        <p>MVC, Restful Architecture</p>
-                    </li>
-                    <li>Tools:
-                        <p>Git, Postman</p>
-                    </li>
+            <div className='text-left ml-20 my-10'>
+                <h3 className='font-semibold text-xl py-3'>Technical Skills</h3>
+                <ul className='py-3 resume-list'>
+                    <li><strong>Languages:</strong> JavaScript, React, HTML5, CSS3</li>
+                    <li><strong>Frameworks / Libraries: </strong>React, Express, Next.js</li>
+                    <li><strong>Databases / Backends: </strong>MongoDB, PostgreSQL, Firebase, AWS</li>
+                    <li><strong>Methodologies: </strong>MVC, Restful Architecture</li>
+                    <li><strong>Tools: </strong>Git, VS Code, Postman</li>
                 </ul>
             </div>
-            <div>
-                <h3>Work Experience</h3>
+            <div className='text-left ml-20 my-10'>
+                <h3 className='font-semibold text-xl'>Work Experience</h3>
                 <ul>Mixlab Inc.
                     <li>
                         <strong>Hazardous Drug Lead Compounding Technician</strong> Feb 2023 - Present
@@ -56,9 +49,10 @@ function Resume () {
                 </ul>
             </div>
             <div>
-                <h3>Education</h3>
-                <ul>
-                    <li><strong>General Assembly</strong> <i>Software Engineering Fellow</i> Nov 2022 - May 2023</li>
+                <h3 className='font-semibold text-xl'>Education</h3>
+                <ul className='flex flex-col'>
+                    <li><strong>General Assembly</strong> -  Nov 2022 - May 2023
+                    <p><i className='mr-auto'>Software Engineering Fellow</i></p></li>
                     <li><strong>Hunter College</strong> <i>Bachelor's of Arts in Chemistry</i> Expected Date of Graduation: June 2026</li>
                 </ul>
             </div>
