@@ -27,7 +27,7 @@ function About (props) {
     }
 
     return (
-        <div className='max-w-screen-xl'>
+        <div>
             <Header />
             <div className='flex flex-col items-center mx-auto p-6'>
                 <h2>Set Bio Length</h2>
@@ -47,7 +47,7 @@ function About (props) {
                 <Project projects={featuredProjects} />
             </div>
             <button className='btn-primary justify-center items-center mb-4' onClick={() => navigate('/projects')}>View More Projects</button>
-            <div>
+            <div className='flex flex-col items-center mt-3'>
                 <Contact />
             </div>
         </div>
