@@ -17,13 +17,13 @@ function Navigation () {
                         : (<img src={require('../icons/hamburger.png')} style={{width: '32px', height: '28px'}} />)
                 }
                 </button>
-                <div className={navOpen ? 'w-full mr-10 md:hidden overflow-hidden' : 'hidden w-full md:block md:w-auto'}>
-                    <ul className= {navOpen ? 'flex flex-col p-2 w-2/5 ml-auto shadow-2xl bg-white text-center rounded-lg'
+                <div className={navOpen ? 'w-full mr-10 ml-auto md:hidden overflow-visible' : 'hidden w-full md:block md:w-auto'}>
+                    <ul className= {navOpen ? 'flex flex-col p-2 w-2/6 ml-auto shadow-2xl bg-white text-center rounded-lg absolute right-12'
                     : 'flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent'} >
-                        <Link to='/projects' onClick={() => setNavOpen(false)}>
+                        <Link to='/projects' onClick={() => setNavOpen(false)} >
                             <li className='hover:font-semibold'>Projects</li>
                         </Link>
-                        <Link to='/resume' onClick={() => setNavOpen(false)}>
+                        <Link to='/resume' onClick={() => setNavOpen(false)} >
                             <li className='hover:font-semibold'>Resume</li>
                         </Link>
                     </ul>
