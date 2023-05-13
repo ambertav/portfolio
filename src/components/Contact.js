@@ -10,6 +10,13 @@ function Contact (props) {
 
     const { name, email, message } = formState;
 
+    function handleChange (evt) {
+        setFormState({
+            ...formState,
+            [evt.target.name]: evt.target.value
+        });
+    }
+
     return (
         <>
             <h3>Contact</h3>
@@ -19,6 +26,7 @@ function Contact (props) {
                     <input 
                         type="text"
                         name="name"
+                        onChange={handleChange}
                         value={name}
                     />
                 </label>
@@ -27,14 +35,16 @@ function Contact (props) {
                     <input
                         type="text"
                         name="email"
+                        onChange={handleChange}
                         value={email}
                     />
                 </label>
                 <label>
                     Message:
-                    <input
+                    <textarea
                         type="text"
                         name="message"
+                        onChange={handleChange}
                         value={message}
                     />
                 </label>
