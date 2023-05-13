@@ -2,11 +2,15 @@ import { useState } from 'react';
 
 function Contact (props) {
 
-    const [formState, setFormState] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    function getClearFormState () {
+        return ({
+            name: '',
+            email: '',
+            message: ''
+        });
+    }
+
+    const [formState, setFormState] = useState(getClearFormState());
 
     const { name, email, message } = formState;
 
@@ -17,10 +21,15 @@ function Contact (props) {
         });
     }
 
+    function handleSubmit (evt) {
+        evt.preventDefault();
+        setFormState(getClearFormState());
+    }
+
     return (
         <>
             <h3>Contact</h3>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>
                     Name:
                     <input 
