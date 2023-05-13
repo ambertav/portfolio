@@ -15,7 +15,7 @@ function Contact (props) {
     const { name, email, message } = formState;
 
     function encode ({ name, email, message }) {
-        return `form-name=contact&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`
+        return `form-name=contact&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`;
     }
 
     function handleChange (evt) {
@@ -33,7 +33,7 @@ function Contact (props) {
                 'Content-type': 'application/x-www-form-urlencoded'
             },
             body: encode(formState)
-        })
+        });
         setFormState(getClearFormState());
     }
 
@@ -44,6 +44,7 @@ function Contact (props) {
                 <input type="hidden" name="form-name" value="contact" />
                 <label htmlFor="name">Name:</label>
                     <input 
+                        id="name"
                         type="text"
                         name="name"
                         onChange={handleChange}
@@ -51,6 +52,7 @@ function Contact (props) {
                     />
                 <label htmlFor="email">Email:</label>
                     <input
+                        id="email"
                         type="text"
                         name="email"
                         onChange={handleChange}
@@ -58,10 +60,11 @@ function Contact (props) {
                     />
                 <label htmlFor="message">Message:</label>
                     <textarea
+                        id="message"
                         name="message"
                         onChange={handleChange}
                         value={message}
-                    />
+                    ></textarea>
                 <input type="submit" value="Send Message" />
             </form>
         </>
