@@ -66,6 +66,12 @@ main {
   }
 }
 
+@layer components {
+  .resume-list > li {
+    @apply py-2 md:ps-10 pr-4 text-sm md:text-base
+  }
+}
+
 .hamburger {
   display: none;
 }
