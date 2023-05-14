@@ -8,6 +8,7 @@ export default {
     projects: [
         {
             name: 'Astronomy Memory Game',
+            src: 'astronomy-memory-game',
             deployLink: 'https://ambertav.github.io/astronomy-memory-game/',
             repoLink: 'https://github.com/ambertav/astronomy-memory-game',
             description: 'A web application that utilizes randomized images from NASA\'s Astronomy Photo of the Day (APOD) API as the cards for a memory matching game.',
@@ -16,6 +17,7 @@ export default {
         },
         {
             name: 'Weightlifting Training Log',
+            src: 'weightlifting-training-log',
             deployLink: 'https://weightlifting-log.herokuapp.com/',
             repoLink: 'https://github.com/ambertav/weightlifting-training-log',
             description: 'A full CRUD web application built via a MEN stack, that allows users to plan and track olympic weightlifting workouts for the week.',
@@ -24,6 +26,7 @@ export default {
         },
         {
             name: 'What\'s For Dinner',
+            src: 'whats-for-dinner',
             deployLink: 'https://whatsfordinnerteam.netlify.app/',
             repoLink: 'https://github.com/ambertav/whatsfordinner',
             backendRepoLink: 'https://github.com/ambertav/whatsfordinner-backend',
@@ -33,6 +36,7 @@ export default {
         },
         {
             name: 'FlowerCollector',
+            src: 'flowercollector',
             deployLink: 'http://flowercollector.herokuapp.com/',
             repoLink: 'https://github.com/ambertav/flower_collector',
             description: 'A web application that allows the user to collect flowers, maintain a watering log for each flower, and add various types pollinators that can pollinate each flower.',
@@ -41,6 +45,7 @@ export default {
         },
         {
             name: 'MediManage',
+            src: 'medimanage',
             deployLink: 'https://medi-manage.herokuapp.com/',
             repoLink: 'https://github.com/ambertav/medication_tracker',
             description: 'A web application that allows users to manage both current and past logs of medications for multiple patients.',
