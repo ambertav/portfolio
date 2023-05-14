@@ -3,7 +3,7 @@ function Resume () {
         <>
         <section className='border-b-2 flex flex-start flex-col text-left'>
             <h1 className='mt-10 md:ml-10 ml-6 font-semibold text-2xl p-3'>Resume</h1>
-            <h5 className='md:ml-10 ml-6 py-4 px-3 text-xs'>Download a copy <a href="https://docs.google.com/document/d/1oGnuK0qlJaKSEy8ad6PwSijSmbz_-Y4PuhU6mxaBIyQ/edit?usp=sharing" target="_blank" className='text-red-900 font-bold'>here</a></h5>
+            <h5 className='md:ml-10 ml-6 py-4 px-3 text-xs md:text-sm'>Download a copy <a href="https://docs.google.com/document/d/1oGnuK0qlJaKSEy8ad6PwSijSmbz_-Y4PuhU6mxaBIyQ/edit?usp=sharing" target="_blank" className='text-red-900 font-bold'>here</a></h5>
         </section>
             <div className='flex flex-col items-center my-6'>
                 <h3 className='font-semibold text-xl mt-10'>Summary</h3>

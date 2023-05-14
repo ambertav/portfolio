@@ -36,7 +36,7 @@ main {
 
 @layer components {
   .btn-secondary {
-    @apply m-2 py-1 px-2 text-xs text-black font-semibold rounded-lg shadow-md focus:outline-black focus:ring-2
+    @apply m-2 p-2 text-xs md:text-sm text-black font-semibold rounded-lg shadow-md focus:outline-black focus:ring-2
     focus:ring-black focus:ring-opacity-75 transition 
     duration-700 ease-in-out hover:text-white hover:bg-black hover:italic;
   }
@@ -44,13 +44,25 @@ main {
 
 @layer components {
   .bio {
-    @apply flex justify-center content-center py-6 my-2
+    @apply flex justify-center py-6 my-2
   }
 }
 
 @layer components {
   .project-card {
-    @apply p-4 m-4 border-black border-2 w-80 h-72
+    @apply p-4 m-6 h-1/5 w-96
+  }
+}
+
+@layer components {
+  .project-card > img {
+    @apply border-2 border-black
+  }
+}
+
+@layer components {
+  .stack {
+    @apply flex text-xs md:text-base flex-wrap mx-4
   }
 }
 
@@ -87,13 +99,13 @@ main {
 
 @layer components {
   .form > input[type='text'] {
-    @apply border-2 border-black md:h-8 md:w-64 h-6 w-36
+    @apply border-2 border-black md:h-8 md:w-64 h-6 w-48 overflow-x-auto
   }
 }
 
 @layer components {
   .form > textarea {
-    @apply border-2 border-black md:h-36 md:w-80 h-20 w-48
+    @apply border-2 border-black md:h-36 md:w-80 h-20 w-60 overflow-y-auto
   }
 }
 
