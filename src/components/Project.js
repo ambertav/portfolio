@@ -1,6 +1,6 @@
 function Project (props) {
     return (
-        <div className='flex flex-wrap justify-evenly items-center'>
+        <div className='flex flex-wrap justify-evenly items-start'>
             {props.projects.map((p, index) => {
                     return (
                         <div className='project-card' key={index}>

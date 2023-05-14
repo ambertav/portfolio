@@ -43,7 +43,7 @@ function About (props) {
             <h3 className='font-semibold text-lg pt-6 my-3'>Connect with Amber</h3>
             <Connect />
             <h3 className='font-semibold text-lg pt-6 mb-3 mt-6'>Featured Projects</h3>
-            <div className='flex justify-evenly items-center flex-wrap'>
+            <div className='flex justify-center items-start'>
                 <Project projects={featuredProjects} />
             </div>
             <button className='btn-primary justify-center items-center mb-4' onClick={() => navigate('/projects')}>View More Projects</button>
