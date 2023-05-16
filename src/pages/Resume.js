@@ -1,9 +1,16 @@
+import { useEffect } from 'react';
+
 function Resume () {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+
     return (
         <>
         <section className='border-b-2 flex flex-start flex-col text-left'>
             <h1 className='mt-10 md:ml-10 ml-6 font-semibold text-2xl p-3'>Resume</h1>
-            <h5 className='md:ml-10 ml-6 py-4 px-3 text-xs md:text-sm'>Download a copy <a href="https://docs.google.com/document/d/1oGnuK0qlJaKSEy8ad6PwSijSmbz_-Y4PuhU6mxaBIyQ/edit?usp=sharing" target="_blank" className='text-red-900 font-bold'>here</a></h5>
+            <h5 className='md:ml-10 ml-6 py-4 px-3 text-xs md:text-sm'>Download a copy <a href="https://docs.google.com/document/d/1oGnuK0qlJaKSEy8ad6PwSijSmbz_-Y4PuhU6mxaBIyQ/edit?usp=sharing" target="_blank" rel="noreferrer" className='text-red-900 font-bold'>here</a></h5>
         </section>
             <div className='flex flex-col items-center my-6'>
                 <h3 className='font-semibold text-xl mt-10'>Summary</h3>
@@ -19,7 +26,7 @@ function Resume () {
             <div className='text-left md:ml-20 ml-10 my-10'>
                 <h3 className='font-semibold text-xl py-3'>Technical Skills</h3>
                 <ul className='py-3 resume-list'>
-                    <li><strong>Languages:</strong> JavaScript, React, HTML5, CSS3</li>
+                    <li><strong>Languages:</strong> JavaScript, Python, HTML5, CSS3</li>
                     <li><strong>Frameworks / Libraries: </strong>React, Express, Next.js</li>
                     <li><strong>Databases / Backends: </strong>MongoDB, PostgreSQL, Firebase, AWS</li>
                     <li><strong>Methodologies: </strong>MVC, Restful Architecture</li>
