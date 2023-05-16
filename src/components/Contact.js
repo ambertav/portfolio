@@ -40,7 +40,7 @@ function Contact (props) {
     return (
         <>
             <h3 className='font-semibold text-lg pt-6 mb-3 mt-6'>Contact</h3>
-            <form onSubmit={handleSubmit} data-netlify="true" name="contact" className='form'>
+            <form onSubmit={handleSubmit} method='POST' name="contact" data-netlify="true" className='form'>
                 <input type="hidden" name="form-name" value="contact" />
                 <label htmlFor="name">Name:</label>
                     <input 
