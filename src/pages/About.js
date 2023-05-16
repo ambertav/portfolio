@@ -15,10 +15,8 @@ function About (props) {
     const [ bioLength, setBioLength ] = useState('long');
     const [ featuredProjects ] = useState(
         props.data.projects.filter((p) => {
-            if (p.featured === true) {
-                return p;
-            }}
-        )
+            return p.featured === true;
+        })
     );
 
     function handleClick (evt) {
