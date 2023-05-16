@@ -35,6 +35,9 @@ function Resume () {
             </div>
             <div className='text-left md:ml-20 ml-10 my-10'>
                 <h3 className='font-semibold text-xl py-3'>Tech Related Experience</h3>
+                <p className='font-semibold'>General Assembly Software Engineering Immersive</p>
+                <p>Nov 2022 - May 2023</p>
+                <p className='p-4 w-4/5 text-sm md:text-base'>Awarded a certificate in a 24 week long, 500+ hour full-stack web development program, providing experience with the latest front and back-end programming languages, tools and methodologies including: HTML, CSS, JavaScript, Node.JS, React.JS, MongoDB, Mongoose, SQL, Python and Django. Completed in-class projects and personal projects focused on the real-world applications of web development principals and best practices.</p>
             </div>
             <div className='text-left md:ml-20 ml-10 my-10'>
                 <h3 className='font-semibold text-xl py-3'>Other Experience</h3>
