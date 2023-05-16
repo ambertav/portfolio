@@ -5,7 +5,7 @@ function Skills (props) {
                 {props.skills.map((s, index) => {
                     return (
                         <li className='p-3' key={index}>
-                            <img src={require(`../icons/${s}.png`)} alt={s} className='icons' />
+                            <img src={require(`../icons/${s.toLowerCase()}.png`)} alt={s} className='icons' />
                         </li>
                     );
                 })}

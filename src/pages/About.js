@@ -13,7 +13,7 @@ function About (props) {
     const navigate = useNavigate();
 
     const [ bioLength, setBioLength ] = useState('long');
-    const [ featuredProjects, setFeaturedProjects ] = useState(
+    const [ featuredProjects ] = useState(
         props.data.projects.filter((p) => {
             if (p.featured === true) {
                 return p;
@@ -29,8 +29,8 @@ function About (props) {
     return (
         <div>
             <Header />
-            <div className='flex flex-col items-center mx-auto p-6'>
-                <h2>Set Bio Length</h2>
+            <div className='flex flex-col items-center mx-auto p-6 mt-5'>
+                <h2 id='bio'>Set Bio Length</h2>
                     <ul className='flex flex-row mx-4 space-x-2.5'>
                         <button className={bioLength === 'short' ? 'btn-primary ring-2 ring-black ring-opacity-75' : 'btn-primary'} onClick={handleClick}>Short</button>
                         <button className={bioLength === 'medium' ? 'btn-primary ring-2 ring-black ring-opacity-75' : 'btn-primary'} onClick={handleClick}>Medium</button>
@@ -38,7 +38,7 @@ function About (props) {
                     </ul>
             </div>
             <Bio bioLength={bioLength} skills={props.data.skills} bio={props.data.bio} />
-            <h3 className='font-semibold text-lg mt-3'>Technical Skills</h3>
+            <h3 className='font-semibold text-lg mt-6' id='skills'>Technical Skills</h3>
             <Skills skills={props.data.skills} />
             <h3 className='font-semibold text-lg pt-6 my-3'>Connect with Amber</h3>
             <Connect />
@@ -47,7 +47,7 @@ function About (props) {
                 <Project projects={featuredProjects} />
             </div>
             <button className='btn-primary justify-center items-center mb-4' onClick={() => navigate('/projects')}>View More Projects</button>
-            <div className='flex flex-col items-center mt-3'>
+            <div className='flex flex-col items-center mt-3' id='contact'>
                 <Contact />
             </div>
         </div>
