@@ -50,7 +50,7 @@ function About (props) {
             <div className='flex flex-col items-center mt-3' id='contact'>
                 <Contact setModalOpen={setModalOpen} />
             </div>
-            {modalOpen ? <Modal /> : ''}
+            {modalOpen ? <Modal setModalOpen={setModalOpen} /> : ''}
         </div>
     );
 }
