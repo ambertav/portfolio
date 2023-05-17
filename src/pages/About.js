@@ -7,6 +7,7 @@ import Skills from '../components/Skills';
 import Connect from '../components/Connect';
 import Project from '../components/Project';
 import Contact from '../components/Contact';
+import Modal from '../components/Modal';
 
 function About (props) {
 
@@ -18,6 +19,7 @@ function About (props) {
             return p.featured === true;
         })
     );
+    const [ modalOpen, setModalOpen ] = useState(false);
 
     function handleClick (evt) {
         evt.preventDefault();
@@ -41,13 +43,14 @@ function About (props) {
             <h3 className='font-semibold text-lg pt-6 my-3'>Connect with Amber</h3>
             <Connect />
             <h3 className='font-semibold text-lg pt-6 mb-3 mt-6'>Featured Projects</h3>
-            <div className='flex justify-center items-start'>
+            <div className='flex justify-center items-start w-screen'>
                 <Project projects={featuredProjects} />
             </div>
             <button className='btn-primary justify-center items-center mb-4' onClick={() => navigate('/projects')}>View More Projects</button>
             <div className='flex flex-col items-center mt-3' id='contact'>
-                <Contact />
+                <Contact setModalOpen={setModalOpen} />
             </div>
+            {modalOpen ? <Modal /> : ''}
         </div>
     );
 }

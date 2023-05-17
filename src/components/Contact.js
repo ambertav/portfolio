@@ -35,6 +35,7 @@ function Contact (props) {
             body: encode(formState)
         });
         setFormState(getClearFormState());
+        props.setModalOpen(true);
     }
 
     return (
