@@ -1,10 +1,10 @@
 export default {
     bio: {
-        short: 'this is the short bio',
-        medium: 'this is the medium bio',
-        long: 'this is the long bio'
+        short: 'Amber is a software engineer with a passion for innovation and simplicity.',
+        medium: 'Amber is a software engineer with an extensive background in pharmaceutical compounding. She is a methodical problem solver who possesses expert judgement and insightful decision making.',
+        long: 'Amber is a skilled full-stack software engineer with an extensive background in pharmaceutical compounding. She is a methodical problem solver who possesses expert judgement and insightful decision making. She excels in rapidly analyzing and troubleshooting complex scenarios. She is eager to utilize her expertise and ingenuity, and to apply her passion for innovation and simplicity.'
     },
-    skills: ['html5', 'css3', 'javascript', 'jquery', 'node-js', 'react', 'next-js', 'mongodb', 'postgresql', 'python', 'firebase', 'aws', 'tailwind'],
+    skills: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Node-js', 'React', 'Next-js', 'Mongodb', 'Postgresql', 'Python', 'Firebase', 'AWS', 'Tailwind'],
     projects: [
         {
             name: 'Astronomy Memory Game',
@@ -20,7 +20,7 @@ export default {
             src: 'weightlifting-training-log',
             deployLink: 'https://weightlifting-log.herokuapp.com/',
             repoLink: 'https://github.com/ambertav/weightlifting-training-log',
-            description: 'A full CRUD web application built via a MEN stack, that allows users to plan and track olympic weightlifting workouts for the week.',
+            description: 'A full CRUD web application built via a MEN (MongoDB, Express, Node) stack, that allows users to plan and track olympic weightlifting workouts for the week.',
             stack: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'jQuery', 'bcrypt', 'Bootstrap', 'Embedded JavaScript'],
             featured: true
         },
@@ -30,7 +30,7 @@ export default {
             deployLink: 'https://whatsfordinnerteam.netlify.app/',
             repoLink: 'https://github.com/ambertav/whatsfordinner',
             backendRepoLink: 'https://github.com/ambertav/whatsfordinner-backend',
-            description: 'A full stack MERN application that allows users to search for recipes based on ingredients available within their pantry.',
+            description: 'A full stack MERN (MongoDB, Express, Node, and React) application that allows users to search for recipes on Edamam\'s Recipe API based on ingredients available within their pantry. The user can then save the recipe, and view details such as a list of ingredients, a link to the full recipe instructions, and even nutrition information per serving.',
             stack: ['React', 'Node.js', 'Express,js', 'MongoDB', 'Firebase', 'JavaScript'],
             featured: false
         },

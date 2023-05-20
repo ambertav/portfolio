@@ -2,7 +2,7 @@ function Bio(props) {
   return (
     <div>
       <div className='bio'>
-        <h2>{props.bio[props.bioLength]}</h2>
+        <h2 className='p-4 w-4/5 text-sm md:text-base'>{props.bio[props.bioLength]}</h2>
       </div>
     </div>
   );
