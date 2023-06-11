@@ -1,3 +1,5 @@
+import { Tooltip } from 'react-tooltip';
+
 function Skills (props) {
     return (
         <div className='flex justify-center items-center pt-3 mb-6'>
@@ -5,7 +7,10 @@ function Skills (props) {
                 {props.skills.map((s, index) => {
                     return (
                         <li className='p-3' key={index}>
-                            <img src={require(`../icons/${s.toLowerCase()}.png`)} alt={s} className='icons' />
+                            <Tooltip anchorSelect='.my-anchor-element' place="top">
+                                    {s}
+                            </Tooltip>
+                            <img src={require(`../icons/${s.toLowerCase()}.png`)} alt={s} className='icons my-anchor-element' />
                         </li>
                     );
                 })}
