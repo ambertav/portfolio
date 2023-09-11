@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        typewriter: 'typewriter 4s steps(11) forwards',
+      },
+    },
   },
+  // ...
   plugins: [],
 }
