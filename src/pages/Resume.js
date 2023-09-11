@@ -10,23 +10,18 @@ function Resume () {
         <>
         <section className='border-b-2 flex flex-start flex-col text-left'>
             <h1 className='mt-10 md:ml-10 ml-6 font-semibold text-2xl p-3'>Resume</h1>
-            <h5 className='md:ml-10 ml-6 py-4 px-3 text-xs md:text-sm'>Download a copy <a href="https://docs.google.com/document/d/1oGnuK0qlJaKSEy8ad6PwSijSmbz_-Y4PuhU6mxaBIyQ/edit?usp=sharing" target="_blank" rel="noreferrer" className='text-red-900 font-bold'>here</a></h5>
+            <h5 className='md:ml-10 ml-6 py-4 px-3 text-xs md:text-sm'>Download a copy <a href="https://drive.google.com/file/d/1Fgptv77WeRodPM-c_y4LRge4V1zI3oOp/view?usp=drive_link" target="_blank" rel="noreferrer" className='text-red-900 font-bold'>here</a></h5>
         </section>
             <div className='flex flex-col items-center my-6'>
                 <h3 className='font-semibold text-xl mt-10'>Summary</h3>
-                <p className='p-4 w-4/5 text-sm md:text-base'>
-                    Skilled full-stack software engineer with an extensive background in pharmaceutical compounding.
-                    Methodical problem solver with expert judgment and insightful decision making.
-                    Excels in rapidly analyzing and troubleshooting complex scenarios while adhering to rigorous
-                    quality standards and maximizing productivity in meeting consumer demand.
-                    Eager to utilize my expertise and ingenuity to enhance user experiences by applying my passion
-                    for innovation and simplicity.
+                <p className='p-4 w-5/6 text-sm md:text-base'>
+                Highly motivated, results-driven full-stack software engineer with a strong background in pharmaceutical compounding. Showcases exceptional analytical skills, meticulous attention to detail, excellent collaboration skills, effective communication, and a lively willingness to learn. Skilled in problem-solving and insightful decision-making. Proficient in troubleshooting complex scenarios, constructing robust web applications, and maintaining scalable and clean code. Committed to enhancing the user experience through innovation and providing simplified solutions. Eager to leverage technical skills, and continuously learn emerging technologies.
                 </p>
             </div>
             <div className='text-left md:ml-20 ml-10 my-10'>
                 <h3 className='font-semibold text-xl py-3'>Technical Skills</h3>
                 <ul className='py-3 resume-list'>
-                    <li><strong>Languages:</strong> JavaScript, Python, HTML5, CSS3</li>
+                    <li><strong>Languages:</strong> JavaScript, Python, TypeScript, HTML5, CSS3</li>
                     <li><strong>Frameworks / Libraries: </strong>React, Express, Next.js</li>
                     <li><strong>Databases / Backends: </strong>MongoDB, PostgreSQL, Firebase, AWS</li>
                     <li><strong>Methodologies: </strong>MVC, Restful Architecture</li>
@@ -34,17 +29,17 @@ function Resume () {
                 </ul>
             </div>
             <div className='text-left md:ml-20 ml-10 my-10'>
-                <h3 className='font-semibold text-xl py-3'>Tech Related Experience</h3>
+                <h3 className='font-semibold text-xl py-3'>Technical Experience</h3>
                 <p className='font-semibold'>General Assembly Software Engineering Immersive</p>
                 <p>Nov 2022 - May 2023</p>
-                <p className='p-4 w-4/5 text-sm md:text-base'>Awarded a certificate for the completion of a 24 week long, 500+ hour full-stack web development program, providing experience with the latest front and back-end programming languages, tools and methodologies including: HTML, CSS, JavaScript, Node.JS, React.JS, MongoDB, Mongoose, SQL, Python and Django. Completed in-class projects and personal projects focused on the real-world applications of web development principles and best practices.</p>
+                <p className='p-4 w-4/5 text-sm md:text-base'>Awarded a certificate for the completion of a 24 week long, 400+ hour full-stack web development program, providing experience with the latest front and back-end programming languages, tools and methodologies including: HTML, CSS, JavaScript, Node.JS, React.JS, MongoDB, Mongoose, SQL, Python and Django. Completed in-class projects and personal projects focused on the real-world applications of web development principles and best practices.</p>
             </div>
             <div className='text-left md:ml-20 ml-10 my-10'>
                 <h3 className='font-semibold text-xl py-3'>Other Experience</h3>
                 <ul className='resume-list'>
                     <p className='font-semibold'>Mixlab Inc.</p>
                     <li>
-                        <i>Hazardous Drug Lead Compounding Technician</i> Feb 2023 - Present
+                        <i>Hazardous Drug Lead Compounding Technician</i> Feb 2023 - Jul 2023
                     </li>
                     <li>
                         <i>Senior Compounding Technician</i> Nov 2021 - Feb 2023
@@ -69,8 +64,8 @@ function Resume () {
                     <p>Nov 2022 - May 2023</p>
                     <p><i>Software Engineering Fellow</i></p></li>
                     <li><strong>Hunter College</strong>
-                    <p>Expected Date of Graduation: June 2026</p>
-                    <p><i>Bachelor's of Arts in Chemistry</i></p></li>
+                    <p>Expected Date of Graduation: Spring 2026</p>
+                    <p><i>Bachelor's of Arts in Computer Science</i></p></li>
                 </ul>
             </div>
         </>
