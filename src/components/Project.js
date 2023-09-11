@@ -3,9 +3,9 @@ function Project (props) {
         <div className='flex flex-wrap justify-evenly items-start'>
             {props.projects.map((p, index) => {
                     return (
-                        <div className='project-card' key={index}>
-                            <img src={require(`../project-media/${p.src}.png`)} alt={p.name} />
-                            <h4 className='p-3 font-semibold text-lg'>{p.name}</h4>
+                        <div className='project-card m-10 md:m-20' key={index}>
+                            <img src={require(`../project-media/${p.src}.png`)} alt={p.name}/>
+                            <h4 className='p-3 mt-4 mb-2 font-semibold text-lg'>{p.name}</h4>
                             <a className='btn-secondary' href={p.deployLink} target="_blank" rel="noreferrer">View Deployment</a>
                             <a className='btn-secondary' href={p.repoLink} target="_blank" rel="noreferrer">View Repository</a>
                             <p className='text-xs py-4 my-2 md:text-lg'>{p.description}</p>
