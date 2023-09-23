@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useHref } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
@@ -65,9 +65,13 @@ function Navigation () {
                         >
                             <li className='hover:font-semibold'>Technical Skills</li>
                         </HashLink>
-                        <Link to='/resume' onClick={() => setNavOpen(false)} >
-                            <li className='hover:font-semibold'>Resume</li>
-                        </Link>
+                        <a 
+                            href="https://drive.google.com/file/d/1Fgptv77WeRodPM-c_y4LRge4V1zI3oOp/view?usp=drive_link"
+                            target="_blank" 
+                            rel="noreferrer" 
+                            onClick={() => setNavOpen(false)} >
+                                <li className='hover:font-semibold'>Resume</li>
+                        </a>
                         <HashLink
                             to='/#contact'
                             scroll={scrollCenter}
