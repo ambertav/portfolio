@@ -1,6 +1,6 @@
 const data = {
     bio: 'Amber is a skilled full-stack software engineer with a passion for innovation and simplicity. She possesses expert judgement and insightful decision making. She excels in troubleshooting complex scenarios.', 
-    skills: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Node-js', 'React', 'Next-js', 'Mongodb', 'Postgresql', 'Python', 'Firebase', 'AWS', 'Tailwind'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node-js', 'React', 'Next-js', 'Mongodb', 'PostgreSQL', 'Python', 'Flask', 'Django', 'Firebase', 'AWS', 'Tailwind'],
     projects: [
         {
             name: 'Astronomy Memory Game',
