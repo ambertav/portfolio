@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import ProjectInfo from './pages/ProjectInfo';
 import Contact from './pages/Contact';
 
 import data from './data';
@@ -18,6 +19,7 @@ function App() {
       <Routes>
           <Route path='/' element={<About data={data} />} />
           <Route path='/projects' element={<Projects projects={data.projects} />} />
+          <Route path='/projects/:name' element={<ProjectInfo />} />
           <Route path='/contact' element={<Contact />} />
       </Routes>
       </main>
