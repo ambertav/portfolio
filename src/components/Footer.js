@@ -1,18 +1,18 @@
-import Connect from './Connect';
-
 function Footer () {
 
-    const year = new Date().getFullYear()
+    function scrollUp () {
+        const currentPosition = window.scrollY;
+        if (currentPosition > 0) {
+          window.requestAnimationFrame(scrollUp);
+          window.scrollTo(0, currentPosition - currentPosition / 10);
+        }
+    }
 
     return (
-    <footer className='w-full py-6 bg-green-100 justify-center'>
-        <Connect />
-        <div>
-            <p className='pt-6'>Copyright &copy; {year} All Rights Reserved</p>
-            <p>Amber Taveras</p>
-        </div>
+    <footer className='w-full flex justify-center py-10'>
+        <button onClick={scrollUp} className='btn-primary w-14 rounded-full shadow-xl text-3xl'>&#8593;</button>
     </footer>
-    )
+    );
 }
 
 
