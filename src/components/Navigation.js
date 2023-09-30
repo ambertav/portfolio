@@ -1,18 +1,11 @@
-import { Link, useHref } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import { HashLink } from 'react-router-hash-link';
 
 function Navigation () {
 
     const [navOpen, setNavOpen] = useState(false);
 
     const menuRef = useRef(null);
-    
-    function scrollCenter (element) {
-        element.scrollIntoView({
-            block: 'center'
-        });
-    }
 
     function clickedOutsideOfNav (evt) {
         if (evt.target === document.querySelector('.menu-icon')) return;
@@ -34,51 +27,42 @@ function Navigation () {
     }, []);
 
     return (
-        <nav className='border-pink-400 shadow bg-pink-200 h-20 shadow-xl fixed w-screen top-0'>
-            <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6'>
+        <nav className='border-pink-400 shadow bg-pink-200 h-26 shadow-2xl fixed w-screen'>
+            <div className='w-screen px-6 md:px-16 flex flex-wrap items-center justify-between p-8'>
                 <Link to='/' onClick={() => setNavOpen(false)}>
-                    <span className='text-2xl font-semibold hover:font-bold'>Amber Taveras</span>
+                    <span className='text-2xl md:text-3xl font-semibold transition duration-300 hover:text-red-500'>Amber Taveras</span>
                 </Link>
                 <button className='hamburger' onClick={handleNavHamburger}>
                 {
-                    navOpen ? (<img className='menu-icon' src={require('../icons/close.png')} alt="x-button icon to close menu" style={{ width: '32px', height: '32px'}} />)
-                        : (<img className='menu-icon' src={require('../icons/hamburger.png')} alt="hamburger icon to open menu" style={{width: '32px', height: '32px'}} />)
+                    navOpen ? (<img className='menu-icon' src={require('../icons/close.png')} alt="x-button icon to close menu" style={{ width: '30px', height: '30px'}} />)
+                        : (<img className='menu-icon' src={require('../icons/hamburger.png')} alt="hamburger icon to open menu" style={{width: '30px', height: '30px'}} />)
                 }
                 </button>
                 <div className={navOpen ? 'w-full mr-10 ml-auto md:hidden overflow-visible' : 'hidden w-full md:block md:w-auto'}>
                     <ul id='menu' ref={menuRef} className= {navOpen ? 'flex flex-col p-2 w-2/6 ml-auto shadow-2xl bg-white text-center rounded-lg absolute right-12 [&>*]:p-2'
-                    : 'flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent'} >
-                        <HashLink
-                            to='/#bio'
-                            scroll={scrollCenter}
+                    : 'flex flex-col font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent'} >
+                        <Link
+                            to='/'
                             onClick={() => setNavOpen(false)}
                         >
-                            <li className='hover:font-semibold'>About</li>
-                        </HashLink>
-                        <Link to='/projects' onClick={() => setNavOpen(false)} >
-                            <li className='hover:font-semibold'>Projects</li>
+                            <li className='md:text-xl transition duration-300 hover:text-red-500'>About</li>
                         </Link>
-                        <HashLink
-                            to='/#skills'
-                            scroll={scrollCenter}
-                            onClick={() => setNavOpen(false)}
-                        >
-                            <li className='hover:font-semibold'>Technical Skills</li>
-                        </HashLink>
+                        <Link to='/projects' onClick={() => setNavOpen(false)} >
+                            <li className='md:text-xl transition duration-300 hover:text-red-500'>Projects</li>
+                        </Link>
                         <a 
                             href="https://drive.google.com/file/d/1Fgptv77WeRodPM-c_y4LRge4V1zI3oOp/view?usp=drive_link"
                             target="_blank" 
                             rel="noreferrer" 
                             onClick={() => setNavOpen(false)} >
-                                <li className='hover:font-semibold'>Resume</li>
+                                <li className='md:text-xl transition duration-300 hover:text-red-500'>Resume</li>
                         </a>
-                        <HashLink
-                            to='/#contact'
-                            scroll={scrollCenter}
+                        <Link
+                            to='/contact'
                             onClick={() => setNavOpen(false)}
                         >
-                            <li className='hover:font-semibold'>Contact</li>
-                        </HashLink>
+                            <li className='md:text-xl transition duration-300 hover:text-red-500'>Contact</li>
+                        </Link>
                     </ul>
                 </div>
             </div>
