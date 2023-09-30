@@ -4,7 +4,7 @@ function Footer () {
         const currentPosition = window.scrollY;
         if (currentPosition > 0) {
           window.requestAnimationFrame(scrollUp);
-          window.scrollTo(0, currentPosition - currentPosition / 10);
+          window.scrollTo(0, currentPosition - currentPosition / 8);
         }
     }
 

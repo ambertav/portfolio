@@ -40,7 +40,6 @@ function ContactForm (props) {
 
     return (
         <>
-            <h3 className='font-semibold text-2xl pt-6 mb-3 mt-6'>Contact</h3>
             <form onSubmit={handleSubmit} method='POST' name="contact" data-netlify="true" className='form'>
                 <input type="hidden" name="form-name" value="contact" />
                 <label htmlFor="name">Name:</label>
@@ -66,7 +65,7 @@ function ContactForm (props) {
                         onChange={handleChange}
                         value={message}
                     ></textarea>
-                <input type="submit" value="Send Message" className='btn-primary mb-3'/>
+                <input type="submit" value="Send Message" className='btn-primary px-8 mb-3'/>
             </form>
         </>
     );
