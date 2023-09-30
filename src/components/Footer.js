@@ -10,7 +10,7 @@ function Footer () {
 
     return (
     <footer className='w-full flex justify-center py-10'>
-        <button onClick={scrollUp} className='btn-primary w-14 rounded-full shadow-xl text-3xl'>&#8593;</button>
+        <button onClick={scrollUp} className='btn-primary w-14 rounded-full shadow-xl text-3xl animate-bounce'>&#8593;</button>
     </footer>
     );
 }
