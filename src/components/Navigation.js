@@ -27,7 +27,7 @@ function Navigation () {
     }, []);
 
     return (
-        <nav className='border-pink-400 shadow bg-pink-200 h-26 shadow-2xl fixed w-screen z-10'>
+        <nav className='border-pink-400 bg-pink-200 h-26 shadow-lg fixed w-screen z-10'>
             <div className='w-screen px-6 md:px-16 flex flex-wrap items-center justify-between p-8'>
                 <Link to='/' onClick={() => setNavOpen(false)}>
                     <span className='text-2xl md:text-3xl font-semibold transition duration-300 hover:text-red-500'>Amber Taveras</span>

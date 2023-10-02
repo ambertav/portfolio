@@ -17,11 +17,11 @@ function Projects (props) {
                 <ul className='flex flex-wrap items-center justify-evenly'>
                 {props.projects.map((p) => {
                     return (
-                        <li className='m-6 w-4/5 lg:w-2/5 lg:m-10 rounded-lg shadow-2xl'>
+                        <li className='m-6 w-4/5 lg:w-2/5 lg:m-10 rounded-lg shadow-xl'>
                             <Link to={`/projects/${p.name.toLowerCase().replaceAll(' ', '-')}`} state={{ project: p }}>
                                 <div className='relative group'>
-                                    <img src={require(`../project-media/${p.src}.png`)} alt={p.name} className='rounded-lg shadow-2xl w-full h-full' />
-                                    <div className='absolute inset-0 bg-stone-800 bg-opacity-0 group-hover:bg-opacity-80 transition-opacity'>
+                                    <img src={require(`../project-media/${p.src}.png`)} alt={p.name} className='rounded-lg shadow-xl w-full h-full' />
+                                    <div className='absolute inset-0 bg-stone-800 bg-opacity-0 group-hover:bg-opacity-80 transition-opacity rounded-lg'>
                                         <h4 className='p-3 md:mt-12 md:mb-12 mb-6 font-semibold text-xl md:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity'>{p.name}</h4>
                                         <a 
                                             className='btn-secondary opacity-0 group-hover:opacity-100 transition-opacity md:mx-4 p-3'

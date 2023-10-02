@@ -14,7 +14,7 @@ function Skills (props) {
             <ul className='flex justify-evenly flex-wrap w-full'>
                 {props.skills.map((s, index) => {
                     return (
-                        <li className='p-6 m-4 mx-10 w-full flex md:justify-evenly items-center shadow-2xl text-xl font-bold md:w-1/3 lg:w-1/4 transition delay-200 duration-500 ease-in-out hover:bg-pink-100 hover:text-red-400' key={index}>
+                        <li className='p-6 m-4 mx-10 w-full flex md:justify-evenly items-center rounded-md shadow-lg text-xl font-bold md:w-1/3 lg:w-1/4 transition delay-200 duration-500 ease-in-out hover:bg-pink-100 hover:text-red-400' key={index}>
                             <Tooltip anchorSelect='.my-anchor-element' place="top">
                                     {tooltipContent}
                             </Tooltip>
