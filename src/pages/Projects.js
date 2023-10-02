@@ -22,10 +22,28 @@ function Projects (props) {
                                 <div className='relative group'>
                                     <img src={require(`../project-media/${p.src}.png`)} alt={p.name} className='rounded-lg shadow-2xl w-full h-full' />
                                     <div className='absolute inset-0 bg-stone-800 bg-opacity-0 group-hover:bg-opacity-80 transition-opacity'>
-                                        <h4 className='p-3 md:mt-16 md:mb-12 mb-6 font-semibold text-xl md:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity'>{p.name}</h4>
-                                        <a className='btn-secondary opacity-0 group-hover:opacity-100 transition-opacity md:mx-4 p-3' href={p.deployLink} target="_blank" rel="noreferrer">View Deployment</a>
-                                        <a className='btn-secondary opacity-0 group-hover:opacity-100 transition-opacity md:mx-4 p-3' href={p.repoLink} target="_blank" rel="noreferrer">View Repository</a>
-                                        <p className='text-sm opacity-0 group-hover:opacity-100 transition-opacity md:my-20 my-6 text-white'>Click for more details</p>
+                                        <h4 className='p-3 md:mt-12 md:mb-12 mb-6 font-semibold text-xl md:text-2xl text-white opacity-0 group-hover:opacity-100 transition-opacity'>{p.name}</h4>
+                                        <a 
+                                            className='btn-secondary opacity-0 group-hover:opacity-100 transition-opacity md:mx-4 p-3'
+                                            href={p.deployLink}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(evt) => {
+                                                evt.preventDefault();
+                                                window.open(p.deployLink, '_blank');
+                                            }}
+                                        >View Deployment</a>
+                                        <a
+                                            className='btn-secondary opacity-0 group-hover:opacity-100 transition-opacity md:mx-4 p-3'
+                                            href={p.repoLink}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(evt) => {
+                                                evt.preventDefault();
+                                                window.open(p.repoLink, '_blank');
+                                            }}
+                                        >View Repository</a>
+                                        <p className='text-sm opacity-0 group-hover:opacity-100 transition-opacity md:my-16 my-6 text-white'>Click for more details</p>
                                     </div>
                                 </div>
                             </Link>
