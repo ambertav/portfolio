@@ -16,12 +16,12 @@ function App() {
     <div className="App">
       <Navigation />
       <main className='pt-20 md:pt-8 lg:pt-20'>
-      <Routes>
-          <Route path='/' element={<About data={data} />} />
-          <Route path='/projects' element={<Projects projects={data.projects} />} />
-          <Route path='/projects/:name' element={<ProjectInfo />} />
-          <Route path='/contact' element={<Contact />} />
-      </Routes>
+        <Routes>
+            <Route path='/' element={<About data={data} />} />
+            <Route path='/projects' element={<Projects projects={data.projects} />} />
+            <Route path='/projects/:name' element={<ProjectInfo />} />
+            <Route path='/contact' element={<Contact />} />
+        </Routes>
       </main>
       <Footer />
     </div>
