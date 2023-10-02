@@ -1,9 +1,13 @@
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function ProjectInfo () {
     const location = useLocation();
-
     const project = location.state.project;
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
 
     return (
         <>
