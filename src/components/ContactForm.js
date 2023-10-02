@@ -42,30 +42,39 @@ function ContactForm (props) {
         <>
             <form onSubmit={handleSubmit} method='POST' name="contact" data-netlify="true" className='form'>
                 <input type="hidden" name="form-name" value="contact" />
-                <label htmlFor="name">Name:</label>
-                    <input 
-                        id="name"
-                        type="text"
-                        name="name"
-                        onChange={handleChange}
-                        value={name}
-                    />
-                <label htmlFor="email">Email:</label>
-                    <input
-                        id="email"
-                        type="text"
-                        name="email"
-                        onChange={handleChange}
-                        value={email}
-                    />
-                <label htmlFor="message">Message:</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        onChange={handleChange}
-                        value={message}
-                    ></textarea>
-                <input type="submit" value="Send Message" className='btn-primary px-8 mb-3'/>
+                <div>
+                    <label htmlFor="name">Name:</label>
+                        <input 
+                            id="name"
+                            type="text"
+                            name="name"
+                            placeholder='Name'
+                            onChange={handleChange}
+                            value={name}
+                        />
+                </div>
+                <div>
+                    <label htmlFor="email">Email:</label>
+                        <input
+                            id="email"
+                            type="text"
+                            name="email"
+                            placeholder='Email'
+                            onChange={handleChange}
+                            value={email}
+                        />
+                </div>
+                <div className='flex flex-col md:flex-row md:justify-items-start md:mr-8'>
+                    <label htmlFor="message" className='font-semibold md:text-lg mr-3 ps-0'>Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder='Ask me anything...'
+                            onChange={handleChange}
+                            value={message}
+                        ></textarea>
+                </div>
+                <input type="submit" value="Send Message" className='btn-primary px-8 mt-10 md:text-lg'/>
             </form>
         </>
     );

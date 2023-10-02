@@ -9,8 +9,8 @@ function Modal (props) {
         <div className='modal'>
             <div className='modal-content'>
                 <h1>Thank you for submitting!</h1>
-                <p className='pb-4'>I'll get in contact with you as soon as possible</p>
-                <button className='btn-secondary px-5' onClick={handleClick}>Close</button>
+                <p className='pb-4'>I'll get in contact with you as soon as possible.</p>
+                <button className='btn-primary px-10' onClick={handleClick}>Close</button>
             </div>
         </div>
     );

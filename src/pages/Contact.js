@@ -16,7 +16,7 @@ function Contact () {
     return (
         <>
             <section className='border-b-2 text-left mx-10 lg:mx-16'>
-                <h1 className='mt-10 md:ml-10 ml-6 font-semibold text-3xl p-3'>Contact</h1>
+                <h1 className='mt-10 md:ml-10 ml-6 font-semibold text-3xl p-3 mb-2'>Contact</h1>
             </section>
             <div className='flex flex-col items-center mt-3' id='contact'>
                 <ContactForm setModalOpen={setModalOpen} />
