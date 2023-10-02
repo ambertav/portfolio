@@ -2,14 +2,13 @@ import Bio from './Bio';
 
 function Header (props) {
     return (
-        <>
-        <div className='flex flex-col justify-center items-center border-b-2 h-screen md:h-[95vh] pb-10 lg:pb-20'>
-            <img src={require('../profile.png')} alt="Amber Taveras profile" className='profile' />
-            <h1 className='text-3xl md:text-5xl font-semibold p-2'>Amber Taveras</h1>
-            <h2 className='text-xl md:text-3xl p-2'>Software Engineer</h2>
-        {<Bio bio={props.bio} /> }
+        <div className='flex justify-center items-center border-b-2 h-[70vh] md:h-[75vh] lg:h-[80vh] md:mx-10 lg:mx-16'>
+                <div className='flex flex-col font-bold md:text-right'>
+                    <h1 className='text-4xl md:text-7xl lg:text-8xl font-bold md:mb-12'>Amber Taveras</h1>
+                    <h2 className='text-xl md:text-3xl lg:text-4xl font-bold md:mb-12 mt-4'>Full-Stack Software Engineer</h2>
+                    {<Bio bio={props.bio} /> }
+                </div>
         </div>
-        </>
     );
 }
 
