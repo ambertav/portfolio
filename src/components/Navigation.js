@@ -51,7 +51,7 @@ function Navigation () {
                             <li className='md:text-xl transition duration-300 hover:text-red-500'>Projects</li>
                         </Link>
                         <a 
-                            href="https://drive.google.com/file/d/1Fgptv77WeRodPM-c_y4LRge4V1zI3oOp/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1XCx3Ju-RXl7-JlThPTmA-a79slTemEMj/view?usp=drive_link"
                             target="_blank" 
                             rel="noreferrer" 
                             onClick={() => setNavOpen(false)} >
