@@ -17,10 +17,13 @@ function ProjectInfo () {
             <div className='md:grid md:grid-cols-3 gap-10 mx-10 md:mt-10 lg:mt-20'>
                 <div className='md:col-span-2'>
                     <p className='mt-10 md:text-xl pb-6'>{project.description}</p>
-                    <div className='md:col-span-2 my-10 mb-10'>
-                        <a className='btn-secondary md:text-lg mx-3 md:mx-8' href={project.deployLink} target="_blank" rel="noreferrer">View Deployment</a>
-                        <a className='btn-secondary md:text-lg mx-3 md:mx-8' href={project.repoLink} target="_blank" rel="noreferrer">View Repository</a>
-                        <img src={require(`../project-media/${project.src}.png`)} alt={project.name} className='rounded-lg shadow-2xl mt-10' />
+                    <div className='md:col-span-2 my-12 mb-10'>
+                        <div className='flex flex-col md:flex-row justify-between'>
+                            <a className='btn-secondary md:text-lg text-base mx-10 md:mx-3' href={project.deployLink} target="_blank" rel="noreferrer">View Deployment</a>
+                            <a className='btn-secondary md:text-lg text-base mx-10 md:mx-3' href={project.frontendRepo} target="_blank" rel="noreferrer">View Repository</a>
+                            { project.backendRepo ? <a className='btn-secondary md:text-lg text-base mx-10 md:mx-3' href={project.backendRepo} target="_blank" rel="noreferrer">View Backend Repository</a> : '' }
+                        </div>
+                        <img src={require(`../project-media/${project.src}.png`)} alt={project.name} className='rounded-lg shadow-2xl mt-10 h-64 md:h-[70vh] w-100' />
                     </div>
                 </div>
                 <div className='md:col-start-3pt-10'>
