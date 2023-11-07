@@ -51,13 +51,13 @@ main {
 }
 
 @layer components {
-  .stack {
-    @apply flex text-xs md:text-base flex-wrap mx-4
+  .stack-icons > img {
+    @apply w-8 h-8 md:w-12 md:h-12
   }
 }
 
 @layer components {
-  .icons {
+  .icons > img {
     @apply w-16 h-16 md:w-20 md:h-20
   }
 }

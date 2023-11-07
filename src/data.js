@@ -1,12 +1,12 @@
 const data = {
     bio: ['Passion for innovation and simplicity', 'Excels in troubleshooting complex scenarios', 'Expert judgement', 'Insightful decision making'],
     skills: {
-        languages: ['JavaScript', 'Python', 'TypeScript'],
-        frontend: ['HTML', 'CSS', 'React', 'Next-js', 'jQuery'],
-        backend: ['Node-js', 'Express', 'Django', 'Flask'],
-        databases: ['MongoDB', 'PostgreSQL'],
-        cloud: ['AWS', 'Firebase'],
-        testing: ['Jest', 'Pytest']
+        'programming languages': ['JavaScript', 'Python', 'TypeScript'],
+        'frontend development': ['HTML', 'CSS', 'React', 'Next-js', 'jQuery'],
+        'backend development': ['Node-js', 'Express', 'Django', 'Flask'],
+        'databases': ['MongoDB', 'PostgreSQL'],
+        'cloud services': ['AWS', 'Firebase'],
+        'testing frameworks': ['Jest', 'Pytest']
     },
     projects: [
         {
@@ -16,7 +16,7 @@ const data = {
             frontendRepo: 'https://github.com/GA-Oct-hackathon-team-3/frontend',
             backendRepo: 'https://github.com/GA-Oct-hackathon-team-3/backend',
             description: 'A full CRUD mobile and web application that utilizes AI to curate personalized gift suggestions based on the recipients\' interests and preferences.',
-            stack: ['Node.js', 'Express', 'MongoDB', 'TypeScript', 'JavaScript', 'React', 'Jest', 'AWS'],
+            stack: ['Node-js', 'Express', 'MongoDB', 'TypeScript', 'JavaScript', 'React', 'Jest', 'AWS'],
         },
         {
             name: 'Weightlifting Training Log',
@@ -25,7 +25,7 @@ const data = {
             frontendRepo: 'https://github.com/ambertav/weightlifting-training-log',
             backendRepo: '',
             description: 'A full CRUD web application built via a MEN (MongoDB, Express, Node) stack, that allows users to plan and track olympic weightlifting workouts for the week.',
-            stack: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'jQuery', 'Jest', 'AWS'],
+            stack: ['Node-js', 'Express', 'MongoDB', 'JavaScript', 'jQuery', 'Jest', 'AWS'],
         },
         {
             name: 'FlowerCollector',
