@@ -34,8 +34,8 @@ function Navigation () {
                 </Link>
                 <button className='hamburger' onClick={handleNavHamburger}>
                 {
-                    navOpen ? (<img className='menu-icon' src={require('../icons/close.png')} alt="x-button icon to close menu" style={{ width: '30px', height: '30px'}} />)
-                        : (<img className='menu-icon' src={require('../icons/hamburger.png')} alt="hamburger icon to open menu" style={{width: '30px', height: '30px'}} />)
+                    navOpen ? (<img className='menu-icon' src={require('../assets/icons/close.png')} alt="x-button icon to close menu" style={{ width: '30px', height: '30px'}} />)
+                        : (<img className='menu-icon' src={require('../assets/icons/hamburger.png')} alt="hamburger icon to open menu" style={{width: '30px', height: '30px'}} />)
                 }
                 </button>
                 <div className={navOpen ? 'w-full mr-10 ml-auto md:hidden overflow-visible' : 'hidden w-full md:block md:w-auto'}>

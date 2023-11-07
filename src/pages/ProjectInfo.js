@@ -23,7 +23,7 @@ function ProjectInfo () {
                             <a className='btn-secondary md:text-lg text-base mx-10 md:mx-3' href={project.frontendRepo} target="_blank" rel="noreferrer">View Repository</a>
                             { project.backendRepo ? <a className='btn-secondary md:text-lg text-base mx-10 md:mx-3' href={project.backendRepo} target="_blank" rel="noreferrer">View Backend Repository</a> : '' }
                         </div>
-                        <img src={require(`../project-media/${project.src}.png`)} alt={project.name} className='rounded-lg shadow-2xl mt-10 h-64 md:h-[70vh] w-100' />
+                        <img src={require(`../assets/project-media/${project.src}.png`)} alt={project.name} className='rounded-lg shadow-2xl mt-10 h-64 md:h-[70vh] w-100' />
                     </div>
                 </div>
                 <div className='md:col-start-3pt-10'>
