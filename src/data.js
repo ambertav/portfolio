@@ -12,7 +12,7 @@ const data = {
         {
             name: 'Presently',
             src: 'presently',
-            deployLink: 'https://weightlifting-log.herokuapp.com/',
+            deployLink: 'https://mypresently.online/',
             frontendRepo: 'https://github.com/GA-Oct-hackathon-team-3/frontend',
             backendRepo: 'https://github.com/GA-Oct-hackathon-team-3/backend',
             description: 'A full CRUD mobile and web application that utilizes AI to curate personalized gift suggestions based on the recipients\' interests and preferences.',
