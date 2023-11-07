@@ -1,5 +1,5 @@
 const data = {
-    bio: ['Passion for innovation and simplicity', 'Excels in troubleshooting complex scenarios', 'Expert judgement', 'Insightful decision making'],
+    bio: ['Passion for innovation', 'Results driven', 'Methodical problem-solver', 'Expert judgement'],
     skills: {
         'programming languages': ['JavaScript', 'Python', 'TypeScript'],
         'frontend development': ['HTML', 'CSS', 'React', 'Next-js', 'jQuery'],

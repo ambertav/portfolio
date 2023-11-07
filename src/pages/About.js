@@ -14,7 +14,7 @@ function About (props) {
     return (
         <div>
             <Header bio={props.data.bio} />
-            <h3 className='font-semibold text-3xl md:text-4xl mt-14 mb-4'>Technical Skills</h3>
+            <h3 className='font-semibold text-3xl md:text-4xl mt-14 mb-4 pt-10 border-t-2 mx-10 lg:mx-16'>Technical Skills</h3>
             <div className='flex flex-col justify-center items-center'>
                 {Object.keys(props.data.skills).map((category) => (
                 <div className='w-4/5' key={category}>
