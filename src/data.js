@@ -28,15 +28,6 @@ const data = {
             stack: ['Node-js', 'Express', 'MongoDB', 'JavaScript', 'jQuery', 'Jest', 'AWS'],
         },
         {
-            name: 'FlowerCollector',
-            src: 'flowercollector',
-            deployLink: 'http://flowercollector.herokuapp.com/',
-            frontendRepo: 'https://github.com/ambertav/flower_collector',
-            backendRepo: '',
-            description: 'A web application that allows the user to collect flowers, maintain a watering log for each flower, and add various types pollinators that can pollinate each flower.',
-            stack: ['Django', 'Python', 'PostgreSQL', 'AWS'],
-        },
-        {
             name: 'Astronomy Memory Game',
             src: 'astronomy-memory-game',
             deployLink: 'https://ambertav.github.io/astronomy-memory-game/',
