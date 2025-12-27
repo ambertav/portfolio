@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber Taveras Portfolio</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Amber's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Amber Taveras</h1>
+      <h2>Software Engineer</h2>
+      <section id="about">
+        <h3>About</h3>
+        <p>
+          c++ engineer <br />
+          building with c++ and c#
+        </p>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <h4>Languages</h4>
+        <ul>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>TypeScript</li>
+        </ul>
+        <h4>Infrastructure and DevOps</h4>
+        <ul>
+          <li>Virtual Machines</li>
+          <li>Docker</li>
+          <li>AWS</li>
+          <li>Linux</li>
+          <li>Windows (Win32)</li>
+        </ul>
+        <h4>Databases</h4>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+        </ul>
+
+        <h4>Tools</h4>
+        <ul>
+          <li>CMake</li>
+          <li>Git</li>
+          <li>GDB</li>
+          <li>GoogleTest</li>
+          <li>Pytest</li>
+        </ul>
+      </section>
+      <section id="experience">
+        <h3>Experience</h3>
+        <ul>
+          <li>Software Intern at Metropolitan Transportation Authority</li>
+          <li>Software Engineer Intern at StudyFetch</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <ul>
+          <li>Game Engine</li>
+          <li>CTC simulator</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h3>Contact</h3>
+        <form
+          id="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/?success=true"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+
+        <div id="thank-you" style="display: none">
+          <h4>Thank you! Your message has been sent.</h4>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/ambertav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="fab fa-github"
+              style="font-size: 40px; color: black; margin-right: 15px"
+            ></i>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ambertaveras"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              class="fab fa-linkedin"
+              style="font-size: 40px; color: #0077b5"
+            ></i>
+          </a>
+        </li>
+      </ul>
+
+      <p id="copyright">Copyright &copy;</p>
+    </footer>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('success') === 'true') {
+        document.getElementById('contact-form').style.display = 'none';
+        document.getElementById('thank-you').style.display = 'block';
+        document
+          .getElementById('contact')
+          .scrollIntoView({ behavior: 'smooth' });
+      }
+
+      const year = new Date().getFullYear();
+      document.getElementById('copyright').textContent += ' ' + year;
+    </script>
+  </body>
 </html>
