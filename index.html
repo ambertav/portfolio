@@ -144,12 +144,59 @@
             </ul>
           </li>
         </ul>
+          <div class="resume">
+          <a 
+            class="primary-button"
+            href="https://drive.google.com/file/d/1rGyZzdkeSSafqQgmQFSlboCsBDk00pS7/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View full resume pdf in a new tab"
+            >View Resume</a
+          ></li>
       </section>
       <section id="projects">
         <h3>#include &lt;projects.h&gt;</h3>
-        <ul>
-          <li>Game Engine</li>
-          <li>CTC simulator</li>
+        <ul class="project-list">
+          <li>
+            <div class="media">
+              <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" width="600" height="400" alt="Project Demo">
+            </div>
+            <div class="details">
+              <p class="project-name">Project 1</p>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia neque debitis accusamus provident quia, officiis error exercitationem nesciunt autem illum sit totam ratione fugiat hic optio, distinctio necessitatibus? Repudiandae!</p>
+              <ul class="stack">
+                <li>C++</li>
+                <li>CMake</li>
+                <li>Qt</li>
+                <li>GoogleTest</li>
+              </ul>
+              <ul class="learn-more">
+                <li><a href="github-link" target="_blank" rel="noopener noreferrer" class="secondary-button">GitHub</a></li>
+                <li><a href="deployment-link" target="_blank" rel="noopener noreferrer" class="secondary-button">Deployment</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" width="600" height="400" alt="Project Demo">
+            </div>
+            <div class="details">
+              <p class="project-name">Project 2</p>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia laborum numquam, libero facere nihil veritatis incidunt, asperiores eligendi quaerat natus assumenda, sed dolorum earum. Vero excepturi explicabo quasi perspiciatis.</p>
+              <ul class="stack">
+                <li>C++</li>
+                <li>CMake</li>
+                <li>Vulkan</li>
+                <li>GLFW</li>
+                <li>ImGui</li>
+                <li>GoogleTest</li>
+              </ul>
+              <ul class="learn-more">
+                <li><a href="github-link" target="_blank" rel="noopener noreferrer" class="secondary-button">GitHub</a></li>
+                <li><a href="deployment-link" target="_blank" rel="noopener noreferrer" class="secondary-button">Deployment</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </section>
       <section id="contact">
@@ -163,27 +210,22 @@
           action="/?success=true"
         >
           <input type="hidden" name="form-name" value="contact" />
-
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" required />
             </div>
-
             <div class="form-group">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required />
             </div>
           </div>
-
           <div class="form-group">
             <label for="message">Message</label>
             <textarea name="message" id="message" required></textarea>
           </div>
-
           <button class="primary-button" type="submit">Submit</button>
         </form>
-
         <div id="thank-you" style="display: none">
           <h4>Thank you! Your message has been sent.</h4>
         </div>
