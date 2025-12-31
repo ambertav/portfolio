@@ -25,10 +25,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Amber's Portfolio</title>
   </head>
   <body>
     <nav>
+      <button class="hamburger" aria-label="Toggle Naviation">
+        <i class="fas fa-code"></i>
+      </button>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -52,40 +56,40 @@
       </section>
       <section id="skills">
         <h3>#include &lt;skills.h&gt;</h3>
-       <ul>
-  <li>
-    <i class="devicon-cplusplus-plain"></i>
-    <span>C++</span>
-  </li>
-  <li>
-    <i class="devicon-csharp-plain"></i>
-    <span>C#</span>
-  </li>
-  <li>
-    <i class="devicon-python-plain"></i>
-    <span>Python</span>
-  </li>
-  <li>
-    <i class="devicon-typescript-plain"></i>
-    <span>TypeScript</span>
-  </li>
-  <li>
-    <i class="devicon-docker-plain"></i>
-    <span>Docker</span>
-  </li>
-  <li>
-    <i class="devicon-amazonwebservices-plain-wordmark"></i>
-    <span>AWS</span>
-  </li>
-  <li>
-    <i class="devicon-postgresql-plain"></i>
-    <span>PostgreSQL</span>
-  </li>
-  <li>
-    <i class="devicon-mongodb-plain"></i>
-    <span>MongoDB</span>
-  </li>
-</ul>
+        <ul>
+          <li>
+            <i class="devicon-cplusplus-plain"></i>
+            <span>C++</span>
+          </li>
+          <li>
+            <i class="devicon-csharp-plain"></i>
+            <span>C#</span>
+          </li>
+          <li>
+            <i class="devicon-python-plain"></i>
+            <span>Python</span>
+          </li>
+          <li>
+            <i class="devicon-typescript-plain"></i>
+            <span>TypeScript</span>
+          </li>
+          <li>
+            <i class="devicon-docker-plain"></i>
+            <span>Docker</span>
+          </li>
+          <li>
+            <i class="devicon-amazonwebservices-plain-wordmark"></i>
+            <span>AWS</span>
+          </li>
+          <li>
+            <i class="devicon-postgresql-plain"></i>
+            <span>PostgreSQL</span>
+          </li>
+          <li>
+            <i class="devicon-mongodb-plain"></i>
+            <span>MongoDB</span>
+          </li>
+        </ul>
       </section>
       <section id="experience">
         <h3>#include &lt;experience.h&gt;</h3>
@@ -212,21 +216,5 @@
       </ul>
       <p id="copyright">/* built by amber taveras, YEAR */</p>
     </footer>
-
-    <script>
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('success') === 'true') {
-        document.getElementById('contact-form').style.display = 'none';
-        document.getElementById('form-direction').style.display = 'none';
-        document.getElementById('thank-you').style.display = 'block';
-        document
-          .getElementById('contact')
-          .scrollIntoView({ behavior: 'smooth' });
-      }
-
-      const year = new Date().getFullYear();
-      let copyright = document.getElementById('copyright');
-      copyright.textContent = copyright.textContent.replace('YEAR', year);
-    </script>
   </body>
 </html>

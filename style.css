@@ -35,6 +35,10 @@ footer {
     box-sizing: border-box;
 }
 
+nav {
+    position: relative;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -57,6 +61,30 @@ nav a {
 
 nav a:hover {
     color: var(--color-secondary);
+}
+
+.hamburger {
+    all: unset;
+    display: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger i {
+    font-size: 1.5rem;
+    color: var(--color-tertiary);
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.hamburger:not(.active) i {
+    transform: translateY(0.25rem);
+}
+
+.hamburger.active i::before {
+    content: "\f00d";
+    font-size: 2.1rem;
 }
 
 main {
@@ -327,15 +355,41 @@ h3 {
     box-shadow: 0 0px 2px 2px var(--color-tertiary);
 }
 
+/* MEDIA MOBILE STYLES */
 @media (max-width: 768px) {
     :root {
         --spacing: 1rem;
     }
 
     nav ul {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color-bg);
         flex-direction: column;
-        gap: 1rem;
-        align-items: flex-start;
+        gap: 2rem;
+        padding: 5rem 2rem 2rem 2rem;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: var(--spacing);
+        top: var(--spacing);
     }
 
     #header,
