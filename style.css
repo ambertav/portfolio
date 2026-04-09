@@ -190,6 +190,12 @@ footer i:hover {
     margin: 0;
 }
 
+/* ABOUT */
+#about .description {
+    line-height: 2;
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+}
+
 /* SKILLS */
 #skills ul {
     flex-wrap: wrap;

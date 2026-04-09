@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Amber Taveras – Software engineer specializing in C++ and C#, with experience in virtualization, Python, and TypeScript."
+      content="Amber Taveras – Software engineer specializing in C++ and Rust, with experience in low-level programming nad infrastructure."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,13 +45,14 @@
       <section id="header">
         <h1>Amber Taveras</h1>
         <h2>Software Engineer</h2>
-        <p>Specializing in C++ and C#</p>
+        <p>Specializing in C++ and Rust</p>
       </section>
       <section id="about">
         <h3>#include &lt;about.h&gt;</h3>
-        <p>
-          C++ engineer building in C++ and C#. Based in the New York
-          Metropolitan Area
+        <p class="description">
+          A systems-focused software engineer with experience in low-level programming, infrastructure, 
+          and numerical computing in C++ and Rust. Pursuing expertise in computer graphics rendering,
+          memory management, and multithreaded systems. Based in the New York Metropolitan Area. 
         </p>
       </section>
       <section id="skills">
@@ -62,8 +63,8 @@
             <span>C++</span>
           </li>
           <li>
-            <i class="devicon-csharp-plain"></i>
-            <span>C#</span>
+            <i class="devicon-rust-plain"></i>
+            <span>Rust</span>
           </li>
           <li>
             <i class="devicon-python-plain"></i>
@@ -100,21 +101,34 @@
             <p class="dates">October 2025 - June 2026</p>
             <ul class="duties">
               <li>
-                Developed a high-throughput log aggregation tool in Go using
-                goroutines and concurrent processing to structure and export
-                logs to a time-series database.
+                Developed a multithreaded, real-time dispatching simulator in Rust using physics-based movement, 
+                featuring a Slint UI frontend and a Tokio async backend decoupled via Unix sockets, to simulate 
+                thousands of concurrent trains as an internal training tool.
               </li>
               <li>
-                Configured Linux virtual machines with bridged networking and
-                Proxmox hypervisor to simulate production infrastructure
-                environment.
+              Configured a virtualized test infrastructure using Proxmox and Linux KVM, provisioning 8 Windows VMs 
+              with bridged networking joined to an Active Directory domain controller to automate Windows Event Log 
+              and ETW trace forwarding via Windows configurations and custom Powershell scripts.
+            </li>
+              <li>
+                Built data aggregation tools in Rust and Python to calculate cumulative wear and tear on field 
+                infrastructure from operational logs and SQL databases, producing Excel reports and graph visualizations.
+              </li>
+              <li>
+                Developed a high-throughput log aggregation tool in Go using goroutines and concurrent processing 
+                to ingest and  structure gigabytes of daily log data from multiple virtual machines into a VictoriaLogs 
+                time-series database.
               </li>
             </ul>
             <ul class="stack">
+              <li>Rust</li>
               <li>Golang</li>
-              <li>Virtualization</li>
+              <li>Python</li>
               <li>Linux</li>
+              <li>Linux KVM</li>
+              <li>Proxmox</li>
               <li>Windows Server</li>
+              <li>Powershell</li>
             </ul>
           </li>
           <li>
@@ -162,38 +176,55 @@
               <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" width="600" height="400" alt="Project Demo">
             </div>
             <div class="details">
-              <p class="project-name">Project 1</p>
-              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia neque debitis accusamus provident quia, officiis error exercitationem nesciunt autem illum sit totam ratione fugiat hic optio, distinctio necessitatibus? Repudiandae!</p>
+              <p class="project-name">Memory Allocators</p>
+              <p class="project-description">
+                A custom memory allocator library in modern C++ implementing linear, free list, and buddy allocation strategies.
+                Each allocator is benchmarked against one another and the standard implementation to assess speed, fragmentation, 
+                and flexibility. Includes full API documentation and a WebAssembly (WASM) visual component built with Emscripten 
+                to visualize the C++ allocator state in the browser.
+              </p>
               <ul class="stack">
                 <li>C++</li>
                 <li>CMake</li>
-                <li>Qt</li>
-                <li>GoogleTest</li>
+                <li>Google Test</li>
+                <li>Google Benchmark</li>
+                <li>Emscripten</li>
+                <li>WebAssembly (WASM)</li>
               </ul>
               <ul class="learn-more">
-                <li><a href="github-link" target="_blank" rel="noopener noreferrer" class="secondary-button">GitHub</a></li>
-                <li><a href="deployment-link" target="_blank" rel="noopener noreferrer" class="secondary-button">Deployment</a></li>
+                <li><a href="https://github.com/ambertav/memory-allocators" target="_blank" rel="noopener noreferrer" class="secondary-button">GitHub</a></li>
+                <li><a href="https://ambertav.github.io/memory-allocators/" target="_blank" rel="noopener noreferrer" class="secondary-button">Deployment</a></li>
               </ul>
             </div>
           </li>
           <li>
             <div class="media">
-              <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" width="600" height="400" alt="Project Demo">
+              <!-- <img src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg" width="600" height="400" alt="Project Demo"> -->
             </div>
             <div class="details">
-              <p class="project-name">Project 2</p>
-              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse mollitia laborum numquam, libero facere nihil veritatis incidunt, asperiores eligendi quaerat natus assumenda, sed dolorum earum. Vero excepturi explicabo quasi perspiciatis.</p>
+              <p class="project-name">Asset Portfolio Optimizer</p>
+              <p class="project-description">
+                An asset management portfolio optimizer that implements the cross-validated exponentially 
+                weighted average covariance matrix detailed in 
+                <em>Estimation of Large Financial Covariances: A Cross-Validation Approach</em> 
+                to construct minimum variance portfolios from real market data. Developed in collaboration 
+                with Baruch College's Financial Quants and Engineers Club.
+              </p>
               <ul class="stack">
                 <li>C++</li>
+                <li>Python</li>
                 <li>CMake</li>
-                <li>Vulkan</li>
-                <li>GLFW</li>
-                <li>ImGui</li>
-                <li>GoogleTest</li>
+                <li>Google Test</li>
+                <li>Yahoo Finance</li>
               </ul>
               <ul class="learn-more">
-                <li><a href="github-link" target="_blank" rel="noopener noreferrer" class="secondary-button">GitHub</a></li>
-                <li><a href="deployment-link" target="_blank" rel="noopener noreferrer" class="secondary-button">Deployment</a></li>
+                <li><a 
+                    href="https://github.com/BaruchFinancialQuantsEngineers-FQE/Crypto-Spring26" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="secondary-button">GitHub</a>
+                </li>
+                <!-- <li><a href="deployment-link" target="_blank" rel="noopener noreferrer" class="secondary-button">Deployment</a></li> -->
               </ul>
             </div>
           </li>
